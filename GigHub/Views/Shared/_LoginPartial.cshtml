@@ -5,12 +5,18 @@
     {
     @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
+<div class="nav navbar-nav navbar-right">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            @User.Identity.GetUserName()
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            @Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+            @Html.ActionLink("Add a Gig", "Create", "Gigs", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+            <a class = "dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        </div>
+    </div>
+</div>
     }
 }
 else

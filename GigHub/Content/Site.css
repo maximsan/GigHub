@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size: 1rem;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,79 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+/*Bootstrap Overrides*/
+
+.navbar {
+    background-color: #ff4342;
+    border-color: #ff4342;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+        color: #fff;
+        background-color: #cc1f1e;
+        border-radius: 12px;
+    }
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.body-content {
+    margin-top: 1rem;
+}
+
+
+.form-control {
+    font-size: 1.3rem;
+    border-radius: 12px;
+    padding: 0.5rem 0.85rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 0.575rem 1.4rem;
+    border-radius: 0.45rem;
+    font-weight: 500;
+}
+
+.field-validation-error {
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+.dropdown-menu.show {
+    min-width: 180px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    background-color: #fff;
+}
+
+
