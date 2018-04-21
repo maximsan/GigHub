@@ -25,6 +25,12 @@ textarea {
 }
 
 
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
 /*Bootstrap Overrides*/
 
 .navbar {
@@ -79,10 +85,6 @@ textarea {
     font-weight: 500;
 }
 
-.field-validation-error {
-    font-size: 1rem;
-}
-
 label {
     font-size: 1.3rem;
 }
@@ -96,6 +98,10 @@ label {
     text-decoration: none;
     outline: none;
     background-color: #fff;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.9rem + 2px);
 }
 
 
