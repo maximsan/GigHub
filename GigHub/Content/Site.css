@@ -79,8 +79,8 @@ span.field-validation-error {
     }
 
 .btn {
-    font-size: 1.2rem;
-    padding: 0.575rem 1.4rem;
+    /*font-size: 1.2rem;
+    padding: 0.575rem 1.4rem;*/
     border-radius: 0.45rem;
     font-weight: 500;
 }
@@ -140,6 +140,7 @@ select.form-control:not([size]):not([multiple]) {
             position: absolute;
             top: 0px;
             left: 90px;
+            width: 120px;
         }
 
             .listOfGigs > li .details .artist {
@@ -150,5 +151,11 @@ select.form-control:not([size]):not([multiple]) {
             }
 
             .listOfGigs > li .details .genre {
+                font-weight: 400;
                 font-size: 0.95rem;
             }
+
+.details > button.goingbtn{
+    border: 1px solid red;
+    box-shadow: 0px 0px 6px 0px red;
+}
