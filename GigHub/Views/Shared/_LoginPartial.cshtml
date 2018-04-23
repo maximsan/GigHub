@@ -3,20 +3,21 @@
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
-<div class="nav navbar-nav navbar-right">
-    <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            @User.Identity.GetUserName()
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            @Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
-            @Html.ActionLink("Add a Gig", "Create", "Gigs", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
-            <a class = "dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        <div class="nav navbar-nav navbar-right">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @User.Identity.GetUserName()
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    @Html.ActionLink("Gigs I'm going", "Attending", "Gigs", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                    @Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                    @Html.ActionLink("Add a Gig", "Create", "Gigs", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                    <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
     }
 }
 else
