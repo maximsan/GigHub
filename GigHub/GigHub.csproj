@@ -218,13 +218,25 @@
     <Compile Include="Migrations\201804201115267_AddForeignKeyPropertiesToGig.Designer.cs">
       <DependentUpon>201804201115267_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804211224157_AddNameToApplicUser.cs" />
+    <Compile Include="Migrations\201804211224157_AddNameToApplicUser.Designer.cs">
+      <DependentUpon>201804211224157_AddNameToApplicUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="ViewModels\ExternalLoginConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\ExternalLoginListViewModel.cs" />
+    <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
+    <Compile Include="ViewModels\ForgotViewModel.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\ManageViewModels.cs" />
+    <Compile Include="ViewModels\ResetPasswordViewModel.cs" />
+    <Compile Include="ViewModels\SendCodeViewModel.cs" />
+    <Compile Include="ViewModels\VerifyCodeViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\GigFormViewModel.cs" />
@@ -355,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804201115267_AddForeignKeyPropertiesToGig.resx">
       <DependentUpon>201804201115267_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211224157_AddNameToApplicUser.resx">
+      <DependentUpon>201804211224157_AddNameToApplicUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

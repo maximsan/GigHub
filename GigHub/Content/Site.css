@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
     font-size: 1rem;
 }
@@ -38,9 +38,9 @@ span.field-validation-error {
     border-color: #ff4342;
 }
 
-.navbar .navbar-nav > li > a {
-    color: #fff;
-}
+    .navbar .navbar-nav > li > a {
+        color: #fff;
+    }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: #fff;
@@ -72,11 +72,11 @@ span.field-validation-error {
     padding: 0.5rem 0.85rem;
 }
 
-.form-control:focus {
-    color: #495057;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
+    .form-control:focus {
+        color: #495057;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
 
 .btn {
     font-size: 1.2rem;
@@ -104,4 +104,51 @@ select.form-control:not([size]):not([multiple]) {
     height: calc(2.9rem + 2px);
 }
 
+.listOfGigs {
+    list-style: none;
+}
 
+    .listOfGigs > li .date {
+        background-color: red;
+        color: white;
+        text-align: center;
+        width: 70px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+        .listOfGigs > li .date .month {
+            text-transform: uppercase;
+            font-size: 0.874rem;
+            font-weight: bold;
+            padding: 2px 10px 2px 8px;
+        }
+
+        .listOfGigs > li .date .day {
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 20px;
+            padding: 6px 12px;
+        }
+
+    .listOfGigs > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .listOfGigs > li .details {
+            position: absolute;
+            top: 0px;
+            left: 90px;
+        }
+
+            .listOfGigs > li .details .artist {
+                margin-top: 4px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .listOfGigs > li .details .genre {
+                font-size: 0.95rem;
+            }
