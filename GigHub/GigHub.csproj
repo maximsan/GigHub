@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201804230942290_AddAttendance.Designer.cs">
       <DependentUpon>201804230942290_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804231200002_AddFollowersAndFollowees.cs" />
+    <Compile Include="Migrations\201804231200002_AddFollowersAndFollowees.Designer.cs">
+      <DependentUpon>201804231200002_AddFollowersAndFollowees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -391,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804230942290_AddAttendance.resx">
       <DependentUpon>201804230942290_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804231200002_AddFollowersAndFollowees.resx">
+      <DependentUpon>201804231200002_AddFollowersAndFollowees.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
